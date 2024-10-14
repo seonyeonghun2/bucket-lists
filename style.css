@@ -21,19 +21,32 @@ h2 {
 .list {
     background-color: var(--secondary-bg-color);
     width: 55%;
-    margin: 0 auto
+    margin: 0 auto;
+    padding: 20px 30px
 }
 .row {
-    display: flex
+    display: flex;
+    align-items: center
+}
+/* 후손 선택자(Descendant Selector) | 하위 선택자 */
+.row p {
+    flex: 1;
+    text-indent: 10px;
+    padding: 10px 0;    
 }
 .text-center {
     text-align: center
 }
-
-.desc {
-    background-color: var(--primary-bg-color);
-    color: var(--secondary-text-color)
-}
 .desc-bg {
     background-color: var(--primary-bg-color)
+}
+.desc-text {
+    color: var(--secondary-text-color)
+}
+.corner-rounded {
+    border-radius: 20px
+}
+.chk {
+    width: 30px;
+    height: 30px;
 }
