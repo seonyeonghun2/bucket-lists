@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bucket lists</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 class="text-center">my bucket lists</h1>
     <h2 class="text-center">나만의 버킷리스트</h2>
     <div class="list">
-        <div class="row">
-            <input type="checkbox" checked class="chk">
-            <p class="desc-bg desc-text corner-rounded">운동 꾸준히 하기</p>
-        </div>
-        <div class="row">
-            <input type="checkbox" checked class="chk">
-            <p class="desc-bg desc-text corner-rounded">커뮤니티로 새로운 사람 사귀기</p>
-        </div>
-        <div class="row">
-            <input type="checkbox" class="chk">
-            <p class="desc-bg desc-text corner-rounded">포토 에세이 출간하기</p>
-        </div>
+      <div class="row">
+        <label for="chk">
+            <input type="checkbox" checked id="chk" />
+            <i class="circle"></i>
+            <span class="desc-bg desc-text corner-rounded">운동 꾸준히 하기</span>
+        </label>
+      </div>
+      <div class="row">
+        <label for="chk">
+            <input type="checkbox" checked id="chk" />
+            <i class="circle"></i>
+            <span class="desc-bg desc-text corner-rounded">
+              커뮤니티로 새로운 사람 사귀기
+            </span>
+                  </div>
+        </label>
+      <div class="row">
+        <label for="chk">
+            <input type="checkbox" id="chk" />
+            <i class="circle"></i>
+            <span class="desc-bg desc-text corner-rounded">포토 에세이 출간하기</span>
+        </label>
+      </div>
     </div>
-</body>
+  </body>
 </html>
