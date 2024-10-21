@@ -10,10 +10,25 @@
     <h1 class="text-center">my bucket lists</h1>
     <h2 class="text-center">너만의 버킷리스트</h2>
     <div class="list">
-      <form action="http://localhost:3000" method="post">
-          <input type="text" name="text" required>
+      <form id="write-form">
+          <input type="text" name="text" required id="input_text">
           <input type="submit" value="등록">
       </form>
     </div><!-- /.list -->
+    <script>
+      const writeForm = document.querySelector("#write-form");
+      writeForm.addEventListener("submit", function(e){
+        e.preventDefault(); // 전송 후 페이지 새로고침 금지
+        fetch("http://localhost:3000", {
+          method: 'post',
+          header: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            text: document.querySelector("#input_text").value
+          })
+        });
+      })
+    </script>
   </body>
 </html>
