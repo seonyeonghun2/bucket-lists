@@ -71,12 +71,16 @@ label span {
   transition: 0.2s; /* CSS변화에 시간차 처리 */
 }
 /* input이 체크되면 특수문자 보이게 처리 */
-#chk:checked + .circle:after {
+#chk1:checked + .circle:after,
+#chk2:checked + .circle:after,
+#chk3:checked + .circle:after {
   opacity: 1;
 }
 
 /* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
-#chk {
+#chk1,
+#chk2,
+#chk3 {
   position: absolute;
   left: -999em;
 }
